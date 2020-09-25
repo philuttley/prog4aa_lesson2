@@ -118,10 +118,13 @@ but checks that its input is correctly formatted and that its result makes sense
 
 ~~~
 def normalize_rectangle(rect):
-    """Normalizes a rectangle so that it is at the origin and 1.0 units long on its longest axis.
+    """Normalizes a rectangle so that it is at the origin and 1.0 units 
+    long on its longest axis.
+    
     Input should be of the format (x0, y0, x1, y1).
     (x0, y0) and (x1, y1) define the lower left and upper right corners
     of the rectangle, respectively."""
+    
     assert len(rect) == 4, 'Rectangles must contain 4 coordinates'
     x0, y0, x1, y1 = rect
     assert x0 < x1, 'Invalid X coordinates'
@@ -156,12 +159,12 @@ AssertionError                            Traceback (most recent call last)
 <ipython-input-2-1b9cd8e18a1f> in <module>
 ----> 1 print(normalize_rectangle( (0.0, 1.0, 2.0) )) # missing the fourth coordinate
 
-<ipython-input-1-c94cf5b065b9> in normalize_rectangle(rect)
-      4     (x0, y0) and (x1, y1) define the lower left and upper right corners
-      5     of the rectangle, respectively."""
-----> 6     assert len(rect) == 4, 'Rectangles must contain 4 coordinates'
-      7     x0, y0, x1, y1 = rect
-      8     assert x0 < x1, 'Invalid X coordinates'
+<ipython-input-1-b2455ef6a457> in normalize_rectangle(rect)
+      7     of the rectangle, respectively."""
+      8 
+----> 9     assert len(rect) == 4, 'Rectangles must contain 4 coordinates'
+     10     x0, y0, x1, y1 = rect
+     11     assert x0 < x1, 'Invalid X coordinates'
 
 AssertionError: Rectangles must contain 4 coordinates
 ~~~
@@ -178,12 +181,12 @@ AssertionError                            Traceback (most recent call last)
 <ipython-input-3-325036405532> in <module>
 ----> 1 print(normalize_rectangle( (4.0, 2.0, 1.0, 5.0) )) # X axis inverted
 
-<ipython-input-1-c94cf5b065b9> in normalize_rectangle(rect)
-      6     assert len(rect) == 4, 'Rectangles must contain 4 coordinates'
-      7     x0, y0, x1, y1 = rect
-----> 8     assert x0 < x1, 'Invalid X coordinates'
-      9     assert y0 < y1, 'Invalid Y coordinates'
-     10
+<ipython-input-1-b2455ef6a457> in normalize_rectangle(rect)
+      9     assert len(rect) == 4, 'Rectangles must contain 4 coordinates'
+     10     x0, y0, x1, y1 = rect
+---> 11     assert x0 < x1, 'Invalid X coordinates'
+     12     assert y0 < y1, 'Invalid Y coordinates'
+     13 
 
 AssertionError: Invalid X coordinates
 ~~~
@@ -215,15 +218,15 @@ print(normalize_rectangle( (0.0, 0.0, 5.0, 1.0) ))
 ~~~
 ---------------------------------------------------------------------------
 AssertionError                            Traceback (most recent call last)
-<ipython-input-5-8d4a48f1d068> in <module>
+<ipython-input-4-8d4a48f1d068> in <module>
 ----> 1 print(normalize_rectangle( (0.0, 0.0, 5.0, 1.0) ))
 
-<ipython-input-1-c94cf5b065b9> in normalize_rectangle(rect)
-     19
-     20     assert 0 < upper_x <= 1.0, 'Calculated upper X coordinate invalid'
----> 21     assert 0 < upper_y <= 1.0, 'Calculated upper Y coordinate invalid'
-     22
-     23     return (0, 0, upper_x, upper_y)
+<ipython-input-1-b2455ef6a457> in normalize_rectangle(rect)
+     22 
+     23     assert 0 < upper_x <= 1.0, 'Calculated upper X coordinate invalid'
+---> 24     assert 0 < upper_y <= 1.0, 'Calculated upper Y coordinate invalid'
+     25 
+     26     return (0, 0, upper_x, upper_y)
 
 AssertionError: Calculated upper Y coordinate invalid
 ~~~
@@ -388,12 +391,12 @@ assert range_overlap([ (0.0, 1.0), (1.0, 2.0) ]) == None
 
 ~~~
 ---------------------------------------------------------------------------
-AssertionError                            Traceback (most recent call last)
-<ipython-input-26-d877ef460ba2> in <module>()
+NameError                                 Traceback (most recent call last)
+<ipython-input-148-42de7ddfb428> in <module>
 ----> 1 assert range_overlap([ (0.0, 1.0), (5.0, 6.0) ]) == None
       2 assert range_overlap([ (0.0, 1.0), (1.0, 2.0) ]) == None
 
-AssertionError:
+NameError: name 'range_overlap' is not defined
 ~~~
 {: .error}
 

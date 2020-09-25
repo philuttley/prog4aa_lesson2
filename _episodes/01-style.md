@@ -94,7 +94,7 @@ average(values)
 
 > ## What Will Be Shown?
 >
-> Highlight the lines in the code below that will be available as online help.
+> Highlight the lines in the code below that will be available as help.
 > Are there lines that should be made available, but won't be?
 > Will any lines produce a syntax error or a runtime error?
 >
@@ -138,6 +138,7 @@ average(values)
 > > ~~~
 > > def middle(a, b, c):
 > >     '''Return the middle value of three.
+>> 
 > >     Assumes the values can actually be compared.'''
 > >     values = [a, b, c]
 > >     values.sort()
@@ -182,7 +183,8 @@ average(values)
 > >
 > > ~~~
 > > def string_machine(input_string, iterations):
-> >     """
+> >     """ Generates iteratively marked strings for the same adjacent characters
+>>
 > >     Takes input_string and generates a new string with -'s and *'s
 > >     corresponding to characters that have identical adjacent characters
 > >     or not, respectively.  Iterates through this procedure with the resultant

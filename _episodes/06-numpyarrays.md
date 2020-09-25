@@ -161,6 +161,7 @@ Vector 1 of sub-array 1 = [24 25 26]
 Vector 2 of sub-array 1 = [27 28 29]
 Vector 3 of sub-array 1 = [30 31 32]
 ~~~
+{: .output}
 
 However, numpy allows much faster access to the component parts of an array through slicing,
 and much faster operations on arrays using the numpy ufuncs.
@@ -212,6 +213,7 @@ and much faster operations on arrays using the numpy ufuncs.
 >>> [[24 26]
 >>> [27 29]]
 >>> ~~~
+>>> {: .output}
 >> {: .solution}
 > {: .challenge}
 >
@@ -492,6 +494,7 @@ ValueError: all the input array dimensions for the concatenation axis must match
 > a[2] = 100.
 > print("b =",b) 
 > ~~~
+> {: .language-python}
 >
 > and this:
 >
@@ -502,6 +505,7 @@ ValueError: all the input array dimensions for the concatenation axis must match
 > a[2] = 100.
 > print("b =",b)
 > ~~~
+> {: .language-python}
 >
 > will make `b` a completely new array which starts out identical to `a` but is independent of 
 > any changes to `a`:
@@ -510,6 +514,7 @@ ValueError: all the input array dimensions for the concatenation axis must match
 > b = [5. 4. 3. 9.]
 > b = [5. 4. 3. 9.]
 > ~~~
+> {: .output}
 {: .callout}
 
 
@@ -761,6 +766,7 @@ Data array: [('a', 1.  , 0) ('b', 1.25, 1) ('c', 1.5 , 2) ('d', 1.75, 3)
 
 Data dtype: [('var1', '<U10'), ('var2', '<f8'), ('var3', '<i4')]
 ~~~
+{: .output}
 
 Where `U10`, `f8` and `i4` refer to respectively to a unicode string of up to 10 characters, 64-bit (8 byte) float and 32-bit (4 byte) integer. In this example, we also told `genfromtxt` to read the column names (`names=True`) which it looks for in the line after any skipped 
 header lines (hence we tell it how many lines to skip, using `skip_header=2`). We can also specify the names of the columns using the `names` 

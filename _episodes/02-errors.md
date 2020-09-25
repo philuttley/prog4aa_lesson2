@@ -57,19 +57,18 @@ favorite_ice_cream()
 {: .language-python}
 
 ~~~
----------------------------------------------------------------------------
 IndexError                                Traceback (most recent call last)
-<ipython-input-1-70bd89baa4df> in <module>()
-      6     print(ice_creams[3])
-      7
-----> 8 favorite_ice_cream()
+<ipython-input-7-e5b074b4d20d> in <module>
+      9     print(ice_creams[3])
+     10 
+---> 11 favorite_ice_cream()
 
-<ipython-input-1-70bd89baa4df> in favorite_ice_cream()
-      4         'vanilla',                                                                    'strawberry'
-      5     ]
-----> 6     print(ice_creams[3])
-      7
-      8 favorite_ice_cream()
+<ipython-input-7-e5b074b4d20d> in favorite_ice_cream()
+      7         'strawberry'
+      8     ]
+----> 9     print(ice_creams[3])
+     10 
+     11 favorite_ice_cream()
 
 IndexError: list index out of range
 ~~~
@@ -211,7 +210,8 @@ it *always* means that there is a problem with how your code is indented.
 > ~~~
 > {: .language-python}
 >
-> Visually it is impossible to spot the error.
+> Visually it may be difficult to spot the error (although Jupyter notebooks will now highlight the
+> problem for you).
 > Fortunately, Python does not allow you to mix tabs and spaces.
 >
 > ~~~
@@ -467,25 +467,25 @@ often reveals common reasons why you might get that error.
 > ~~~
 > ---------------------------------------------------------------------------
 > KeyError                                  Traceback (most recent call last)
-> <ipython-input-1-4be1945adbe2> in <module>()
->      14     print_message('Friday')
->      15
-> ---> 16 print_friday_message()
->
-> <ipython-input-1-4be1945adbe2> in print_friday_message()
->      12
->      13 def print_friday_message():
-> ---> 14     print_message('Friday')
->      15
->      16 print_friday_message()
->
-> <ipython-input-1-4be1945adbe2> in print_message(day)
->       9         'sunday': 'Aw, the weekend is almost over.'
->      10     }
-> ---> 11     print(messages[day])
->      12
->      13 def print_friday_message():
->
+> <ipython-input-133-fd935ca3ca2c> in <module>
+>      16     print_message('Friday')
+>      17 
+> ---> 18 print_friday_message()
+> 
+> <ipython-input-133-fd935ca3ca2c> in print_friday_message()
+>      14 
+>      15 def print_friday_message():
+> ---> 16     print_message('Friday')
+>      17 
+>      18 print_friday_message()
+> 
+> <ipython-input-133-fd935ca3ca2c> in print_message(day)
+>      11         'sunday': 'Aw, the weekend is almost over.'
+>      12     }
+> ---> 13     print(messages[day])
+>      14 
+>      15 def print_friday_message():
+> 
 > KeyError: 'Friday'
 > ~~~
 > {: .error}
@@ -493,7 +493,7 @@ often reveals common reasons why you might get that error.
 > > ## Solution
 > > 1. 3 levels
 > > 2. `print_message`
-> > 3. 11
+> > 3. 13
 > > 4. `KeyError`
 > > 5. There isn't really a message; you're supposed to infer that `Friday` is not a key in `messages`.
 > {: .solution}
