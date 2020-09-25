@@ -10,7 +10,7 @@
 carpentry: "swc"
 
 # Overall title for pages.
-title: "Programming for Astronomy and Astrophysics 2: Programming Skills, Numpy Arrays and Functions"
+title: "Programming for Astronomy and Astrophysics 2: Programming Skills, Arrays and Scientific Libraries"
 
 # Life cycle stage of the lesson
 # possible values: "pre-alpha", "alpha", "beta", "stable"
