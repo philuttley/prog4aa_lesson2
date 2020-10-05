@@ -4,7 +4,7 @@ root: .
 permalink: index.html
 ---
 
-This is the second of three Lessons from the course Programming for Astronomy and Astrophysics. This Lesson follows on from [ Lesson 1: Basic Python](https://philuttley.github.io/prog4aa_lesson1/) and covers more advanced topics such as programming style, errors and debugging, defensive programming (preventing errors) and how to check and optimize the speed of your programs. We will also look in-depth at at Numpy arrays and using Numpy and Scipy functions.
+This is the second of three Lessons from the course Programming for Astronomy and Astrophysics. This Lesson follows on from [ Lesson 1: Basic Python](https://philuttley.github.io/prog4aa_lesson1/) and covers more advanced topics such as programming style, errors and debugging, defensive programming (preventing errors) and how to check and optimize the speed of your programs. We will also look in-depth at at Numpy arrays and using Numpy and Scipy functions. We will end by looking at some of the Astropy sub-packages for working with astronomical calculations and data.
 
 > ## Prerequisites
 >
