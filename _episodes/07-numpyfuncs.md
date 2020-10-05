@@ -335,8 +335,8 @@ is based in large part on numpy and scipy) is a more suitable and versatile libr
 > ~~~
 > y2_ma = np.ma.masked_array(y2,np.isnan(y2))
 > 
-> y2_ma_mean = np.mean(y2_ma,axis=0) # Measure mean along each column of 20 values
-> y2_ma_std = np.std(y2_ma,axis=0,ddof=1) # Measure standard deviation
+> y2_ma_mean = np.ma.mean(y2_ma,axis=0) # Measure mean along each column of 20 values
+> y2_ma_std = np.ma.std(y2_ma,axis=0,ddof=1) # Measure standard deviation
 > 
 > print("Means =",y2_ma_mean)
 > print("Standard deviations =",y2_ma_std)
